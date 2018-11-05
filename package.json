@@ -1,0 +1,40 @@
+{
+  "name": "@yuloh/rollup-plugin-terser",
+  "version": "0.1.0",
+  "description": "A simple plugin for using Terser with Rollup",
+  "main": "dist/rollup-plugin-terser.cjs.js",
+  "module": "dist/rollup-plugin-terser.es.js",
+  "repository": "yuloh/rollup-plugin-terser",
+  "keywords": [
+    "rollup",
+    "rollup-plugin",
+    "terser",
+    "minify"
+  ],
+  "author": "Matt Allan",
+  "license": "MIT",
+  "bugs": "https://github.com/yuloh/rollup-plugin-terser/issues",
+  "homepage": "https://github.com/yuloh/rollup-plugin-terser",
+  "dependencies": {
+    "terser": "^3.10.11"
+  },
+  "peerDependencies": {
+    "rollup": ">=0.66.0 <1"
+  },
+  "devDependencies": {
+    "eslint": "^5.8.0",
+    "mocha": "^5.2.0",
+    "rollup": "^0.66.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "clean": "rm -fr ./dist/*",
+    "lint": "eslint src",
+    "test": "mocha",
+    "pretest": "npm run build",
+    "prepublish": "npm run lint && npm test"
+  },
+  "files": [
+    "dist"
+  ]
+}
