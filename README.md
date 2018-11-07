@@ -13,7 +13,7 @@ npm install --save-dev @yuloh/rollup-plugin-terser
 Any options are passed directly to terser.  You can view the possible options in the [terser docs](https://github.com/terser-js/terser#api-reference).  Unless explicitly disabled the `sourceMap` and `warnings` options are enabled so they can be passed to Rollup.
 
 ```javascript
-import terser from 'rollup-plugin-terser';
+import terser from '@yuloh/rollup-plugin-terser';
 
 export default {
   input: 'src/index.js',
