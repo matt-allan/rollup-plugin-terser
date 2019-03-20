@@ -1,6 +1,6 @@
 {
   "name": "@yuloh/rollup-plugin-terser",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A simple plugin for using Terser with Rollup",
   "main": "dist/rollup-plugin-terser.cjs.js",
   "module": "dist/rollup-plugin-terser.es.js",
